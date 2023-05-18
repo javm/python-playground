@@ -90,7 +90,7 @@ print("Imprimiendo nombres que inician con " + letter)
 for p in starts_with:
     print(p)
 
-
+# Aquí vamos a leer linea por linea
 with open("./contacts.csv", "r") as contacts_file:
     csvreader = csv.reader(contacts_file)
     index = 0
