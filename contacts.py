@@ -93,7 +93,12 @@ for p in starts_with:
 
 with open("./contacts.csv", "r") as contacts_file:
     csvreader = csv.reader(contacts_file)
+    index = 0
+
     for row in csvreader:
-        print(row)
-        
+        if index > 0:
+            print(row)
+        index = index + 1
+
+    
 # [['Nombre', 'Telefono', 'Calle'], ['Carmen', '602 431 203', 'Calle Amapola'], row2]
