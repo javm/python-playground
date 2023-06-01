@@ -57,7 +57,7 @@ class Contacts():
     def printAll(self):
         #para cada contacto en la lista contacts: 
         #imprimir nombre y número
-        self.contacts.sort(key=lambda x: x.name, reverse=True)
+        self.contacts.sort(key=lambda x: x.name)
         for c in self.contacts:
             print(c)
             
@@ -90,6 +90,8 @@ print("Imprimiendo nombres que inician con " + letter)
 for p in starts_with:
     print(p)
 
+contacts1 = Contacts()
+
 # Aquí vamos a leer linea por linea
 with open("./contacts.csv", "r") as contacts_file:
     csvreader = csv.reader(contacts_file)
@@ -97,8 +99,18 @@ with open("./contacts.csv", "r") as contacts_file:
 
     for row in csvreader:
         if index > 0:
-            print(row)
+            #print(row[0]+',',row[1])
+            person=Person(row[0], row[1], row[2])
+            contacts1.add(person)
+            #aqui va la construccion de los objetos persona
+            #row0 = row('Nombre', 'Telefono', 'Calle')
+            #row1 = row('Luna', '602 431 203' ,'Calle Amapola')
+            #row2 = row('Irina', '984 127 528', 'Calle 10')
+            #row3 = row('Rosa', '694 325 018', 'Calle Ebano')
+            #row4 = row('Javier', '958 321 654', 'Calle Laurel')
+            #print(row)
         index = index + 1
 
+contacts1.printAll()      
     
 # [['Nombre', 'Telefono', 'Calle'], ['Carmen', '602 431 203', 'Calle Amapola'], row2]
