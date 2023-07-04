@@ -80,4 +80,26 @@ for e in range(0, len(start), 2):
     print(start[e])
 
 
+
+#numeros pares sin repeticion
+#en lugar de imprimirlos meterlos en una lista
+#
+
+
 # TODO: Extraer los elementos pares de start
+#para cada elemento en la lista start
+#si el elemento en turno es par y no esta en lista pares 
+#se saca de la lista start y se mete en la lista pares
+#imprimir numeros pares
+pares=[]
+print('numeros pares')
+for c in start:
+    if (c%2==0) and not(c in pares):
+        pares.append(c) 
+print('pares:', pares)
+
+#suma de estos numeros (los que hay en pares)
+sumapares=0
+for c in pares:
+    sumapares=sumapares+c
+print('sumapares:', sumapares)
