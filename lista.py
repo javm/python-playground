@@ -92,14 +92,24 @@ for e in range(0, len(start), 2):
 #se saca de la lista start y se mete en la lista pares
 #imprimir numeros pares
 pares=[]
+impares=[]
 print('numeros pares')
 for c in start:
     if (c%2==0) and not(c in pares):
         pares.append(c) 
+    if (c%2==1) and not(c in impares):
+        impares.append(c) 
 print('pares:', pares)
+print('impares:', impares)
 
 #suma de estos numeros (los que hay en pares)
 sumapares=0
 for c in pares:
     sumapares=sumapares+c
 print('sumapares:', sumapares)
+
+#suma de estos numeros (los que hay en impares)
+sumaimpares=0
+for c in impares:
+        sumaimpares=sumaimpares+c
+print('sumaimpares:', sumaimpares)
