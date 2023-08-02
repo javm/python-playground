@@ -120,31 +120,50 @@ num = 4
 # num in start
 # pirmer indice = 0
 # primer_numero = start[0]
+
+
 # lista1 =
-# 8, 6, 7, 9, 4, 2
+# 8, 6, 7, 9, 1, 2
 # current
 # indice
 
+# Valores iniciales
 # fin = False
-# index = 0
+# index = -1
 
+# Rutina de búsqueda del num '4'
 
-# mientras(not fin) repite:
-#  current = lista1[index]
-#  fin = compara(current, num) # current == num 
-#  index = index + 1
+# mientrasQue(no fin y index < len(list1) - 1) repite:
+#   index = index + 1
+#   current = lista1[index]
+#   fin = sonIguales?(current, num) # current == num 
+
 
 # index = 5
 # list1[index]
 
-# t0     0           false
-# t1     1      8    false
-# t2     2       6    false
 
-# index | current | fin
-# 0     |    8    | False
-# 1     |    6    | False
-# 2     |    7    | False 
-# 3     |    9    | False
-# 4     |    4    | False
-# 5               | True 
+# Tiempo | index |  current |  fin
+
+# t0         -1                 False
+# ejecuta ciclo...
+# t1         0          8       False
+# pregunta condición y ejecuta ciclo si esta es cierta.
+# t2         1          6        False
+# pregunta condición y ejecuta ciclo si esta es cierta.
+# t3         2           7         False 
+# pregunta condición y ejecuta ciclo si esta es cierta.
+# t4         3           9        False
+# pregunta condición y ejecuta ciclo si esta es cierta.
+# t5          4           4         True
+# pregunta condición y ejecuta ciclo si esta es cierta.
+
+# sabemos dónde esta el 4
+# esta en list1[index]
+
+def pares(n):
+    lista_pares = []
+    while(i < n):
+        if(i % 2 == 0):
+            lista_pares.append(i)
+        i = i + 1
