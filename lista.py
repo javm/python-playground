@@ -114,7 +114,6 @@ for c in impares:
         sumaimpares=sumaimpares+c
 print('sumaimpares:', sumaimpares)
 
-<<<<<<< HEAD
 
 #Crear una lista de números pares e imprimirla con un while
 #Crear una función que genere los primeros N números pares. Dónde N es un parámetro de la función
@@ -135,7 +134,6 @@ def numeros_pares(n):
             print(i)
         i +=1
 numeros_pares(10)
-=======
 lista1 = start.copy()
 
 num = 4
@@ -170,4 +168,3 @@ num = 4
 # 3     |    9    | False
 # 4     |    4    | False
 # 5               | True 
->>>>>>> d1ab886bccc1046ae5288e78bc57d72e9df27bce
