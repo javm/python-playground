@@ -1,0 +1,16 @@
+- Tipos de datos básicos
+
+1. Enteros
+2. Números punto flotante
+3. Caracteres
+4. Strings(Cadenas de caracteres)
+
+- Estructuras de datos y sus operaciones:
+https://docs.python.org/3/tutorial/datastructures.html
+1. Lists y Tuplas
+2. Dictionaries
+3. Sets
+
+Loops. Iteraciones
+el 'for' y el 'while'
+
